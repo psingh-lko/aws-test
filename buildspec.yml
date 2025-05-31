@@ -18,7 +18,7 @@ phases:
       - echo Build completed on `date`
       - sam package --s3-bucket prashant3task --template-file samTemplate.yml --output-template-file outputSamTemplate.yml
       - ls -la build/libs
-artifacts:prashant3task
+artifacts: prashant3task
   files:
     - build/libs/prashantawstest-$VERSION.jar
     - outputSamTemplate.yml
